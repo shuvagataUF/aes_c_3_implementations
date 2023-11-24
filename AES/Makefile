@@ -11,7 +11,7 @@ $(BUILD_DIR):
 
 .PHONY:  lint clean
 
-$(APP_NAME): gmult.c aes.c main.c
+$(APP_NAME): gmult.c aes.c main.c gmult.h aes.h
 	echo [CC] $@
 	$(CC) $(CFLAGS) -o ./$(BUILD_DIR)/$@ $^
 
