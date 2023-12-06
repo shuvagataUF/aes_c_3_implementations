@@ -4,7 +4,7 @@ CFLAGS = -g
 APP_NAME = tiny-aes-c
 BUILD_DIR = build
 
-default: tiny-aes-c
+all: $(BUILD_DIR) tiny-aes-c
 
 $(BUILD_DIR):
 	mkdir -pv $(BUILD_DIR)

@@ -4,7 +4,7 @@ CFLAGS = -g
 APP_NAME = AES
 BUILD_DIR = build
 
-default: $(APP_NAME)
+all: $(BUILD_DIR) $(APP_NAME)
 
 $(BUILD_DIR):
 	mkdir -pv $(BUILD_DIR)
